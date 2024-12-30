@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1' charset="utf-8">
+        <script src="https://kit.fontawesome.com/308fe460c8.js" crossorigin="anonymous"></script>
+        <script src="js/api.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div id="inner-nav"></div>
+        <div id="container">
+            <div id="profile">
+                <div id="image">
+                    <img id="profile-photo2" src="images/portrait.jpg" alt="Profile-Image">
+                </div>
+                <p id="name">Álvaro Nieto López<br><span id="email">a.nietolopez96@gmail.com</span></p>
+                <p id="designation">IT Coordinator and System Administrator<br><span id="college">Softcom Informática</span></p>
+                <div id="social-links">
+                    <a href="https://www.linkedin.com/in/%C3%A1lvaro-n-48271896/">
+                        <i class="fab fa-linkedin-in stroke-transparent"></i></a>
+                    <a href="https://github.com/AlvaroNieto/">
+                        <i class="fab fa-github stroke-transparent"></i>
+                    </a>
+                </div>
+                <hr width="100%">
+                <div id="about">
+                    <h4 style="display:inline;">About me</h4>
+                    <i class="fas fa-address-card stroke-transparent"></i>
+                </div>
+                <p id="year-graduation">Age<br><strong>28 years</strong></p>
+                <p id="education">Education<br><strong>CFGS ASIR</strong></p>
+                <p id="telephone">Phone number<br><strong>+34 609 224 653</strong></p>
+                <p id="telephone">Driving licence<br><strong>A and B</strong></p>
+                <p id="telephone">Languages<br><strong>Spanish, English (C1)</strong></p>
+                <hr width="100%">
+                <div id="about">
+                    <h4 style="display:inline;">Certifications</h4>
+                    <i class="far fa-file-alt"></i>
+                </div>
+                    <div id="certifications">
+                        <div class="cert-item">
+                            <img src="images/aws.png" alt="AWS Logo" class="cert-logo">
+                            <div class="cert-text">
+                                <p><strong>AWS</strong></p>
+                                <p>Certified Cloud Practitioner</p>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <img src="images/wg.png" alt="WatchGuard Logo" class="cert-logo">
+                            <div class="cert-text">
+                                <p><strong>WatchGuard</strong></p>
+                                <p>Network Security Technical</p>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <img src="images/netapp.png" alt="NetApp Logo" class="cert-logo">
+                            <div class="cert-text">
+                                <p><strong>NetApp</strong></p>
+                                <p>Authorized Service Engineer Level 3</p>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <img src="images/university-of-cambridge.png" alt="Cambridge Logo" class="cert-logo">
+                            <div class="cert-text">
+                                <p><strong>Cambridge University</strong></p>
+                                <p>C1 Advanced (English)</p>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <img src="images/cisco.png" alt="Cisco Logo" class="cert-logo">
+                            <div class="cert-text">
+                                <p><strong>Cisco</strong></p>
+                                <p>CCNA: Introduction to Networks</p>
+                            </div>
+                        </div>
+                    </div>
+                <hr width="100%">
+                <div id="about">
+                    <h4 style="display:inline;">Strengths</h4>
+                    <i class="fas fa-user-check stroke-transparent"></i>
+                </div>
+                <p id="certs"><strong>Problem solving</strong><br>Quickly and efficiently troubleshoot and resolve technical issues. </p>
+                <p id="certs"><strong>Proactive</strong><br>Anticipating future issues and proposing solutions before they occur.</p>
+                <p id="certs"><strong>Technical Proficiency</strong><br>Strong knowledge of various information systems and services across multiple IT domains. 
+                    Proven ability to quickly adapt to new and emerging technologies.</p>
+                <p id="certs"><strong>Soft skills</strong><br>Direct interaction and acquisition of potencial clients. Comfortable collaborating with multiple departments, including non-IT.</p>
+                <hr width="100%">
+                <div id="about">
+                    <h4 style="display:inline;">Current views</h4>
+                    <i class="fas fa-eye stroke-transparent"></i>
+                </div>
+                <p>This site has been visited: <strong id="visitors"></strong> times</p>
+            </div>
+            <div id="info-cards">
+                <div class="card">
+                    <p><i class="fas fa-briefcase stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Experience</p>
+                    <ul>
+                        <li><p class="tags">IT Coordinator and System Administrator<br>
+                                <span>Softcom Informática | 2022-2024</span>
+                                <p class="job-desc" id="coitsa-desc">Maintaining select responsibilities from my previous role, I now manage the IT department and infrastructure. 
+                                    Oversee technology operations, information security, and contribute to ISO 27001 and 9001 certification renewals. 
+                                    Report directly to the IT Director and senior management. 
+                                    Coordinate the technical team to implement software solutions, infrastructure improvements and deployments. 
+                                    Lead strategic technology planning to ensure alignment with business goals and drive operational efficiency.
+                                </p>
+                            </p>
+                        </li>
+                        <li><p class="tags">System Administrator<br>
+                                <span>Softcom Informática | 2017-2022</span>
+                                <p class="job-desc" id="sa-desc">Hardware and software installation, configuration, maintenance and administration of Windows and Linux computer systems. 
+                                First and second level support for incidents including users, services, end-devices, servers, managed routers, firewalls, etc. 
+                                </p>
+                            </p>
+                        </li>
+                        <li><p class="tags">System Administrator<br><span>Isotrol | 2017</span>
+                                <p class="job-desc" id="sa-desc"> Testing, control and release of packages to private linux repositories using Puppet.</p>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <p><i class="fas fa-tools stroke-transparent"></i></i>&nbsp;&nbsp;&nbsp;Labs</p>
+                    <ul>
+                        <li><p class="tags">
+                                <a href="https://github.com/AlvaroNieto/kubernetes-deploy">
+                                    <i class="blueicon fab fa-github-square"></i>
+                                </a> Kubernetes cluster from scratch <br>
+                                <span> Kubernetes | <span>Docker | Linux | Network | Certificates | SSH | Virtualization</span></span>
+                                <span>
+                            </p>
+                        </li>
+                        <li><p class="tags"><a href="https://github.com/AlvaroNieto/lambda-api-gw"><i class="blueicon fab fa-github-square"></i></a> Serverless visit counter (In this resume)<br><span> AWS | <span>Lambda | Python | API Gateway | Serverless</span> | Terraform</span></p>
+                        </li>
+                        <li><p class="tags"><a href="https://github.com/AlvaroNieto/ec2basicsite-elb"><i class="blueicon fab fa-github-square"></i></a> Basic Site with ALB<br><span> AWS | <span>EC2 | ALB | Route 53 | ACM</span></span><span> | Terraform</p>
+                        </li>
+                        <li><p class="tags"><a href="https://github.com/AlvaroNieto/cloudfront-s3-staticsite"><i class="blueicon fab fa-github-square"></i></a> S3 Static Site + CloudFront (This resume)<br><span> AWS | <span>S3 | CloudFront | Route 53 | ACM </span></span><span>| Terraform</p>
+                        </li>
+                        <li><p class="tags">
+                            Ansible enviroment<br>
+                            <span> Ansible | <span> Linux | Network | SSH | Virtualization | Network</span></span>
+                            <span>
+                        </p>
+                        </li>
+                        <li><p class="tags">NAS Multimedia server<br><span>Hardware | <span> Storage | RAID | </span></span><span>Network | <span>NAT and Segmentation</span></span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <p><i class="fas fa-toolbox stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Skills</p>
+                    <ul>
+                        <li><p class="tags">Amazon Web Services<br><span><span>EC2 | S3 | VPC | ELB | CloudFront | Route 53 | VPC | API Gateway | Lambda | IAM </span></span></p>
+                        <li><p class="tags">Microsoft 365 and Azure<br><span><span>Migrations into M365 | Exchange | Entra ID | Defender | Teams | Sharepoint </span></span></p>
+                        <li><p class="tags">Network<br><span><span>Watchguard | Mikrotik | IPsec, Branch Office and VPNs | Routing, Firewall, NAT, SD-WAN, Failover, STP, VLANs, Segmentation, SNMP</span></span> </p>
+                        <li><p class="tags">Microsoft Windows<br><span><span>Windows Server 2003 to 2022 | DNS, Active Directory, DHCP, GPO, NTFS permissions, Service migrations</span></span></p>
+                        <li><p class="tags">Linux<br><span><span>Ubuntu Server, CentOS | Bind, RAID by software, DHCP, Docker, UFW, logs</span></span></p>
+                        <li><p class="tags">Storage<br><span><span>NAS - Synology and QNAP | RAID, SCSI, SMB, NFS, FTP, SFTP</span></span></p>
+                        <li><p class="tags">Backup<br><span><span>Veeam Backup and Replication | Synology Active Backup | Acronis Backup and Recovery</span></span></p>                                  
+                        <li><p class="tags">Scripting and Automation<br><span><span>Powershell and Bash | Ansible</span></span></p>
+                        <li><p class="tags">Security<br><span><span>Firewall security services (Watchguard) | HashiCorp Vault | EPP/EDR solutions</span></span></p>
+                        <li><p class="tags">Monitoring<br><span><span>Zabbix | Prometheus + Grafana </span></span></p>
+                        <li><p class="tags">Hosting<br><span><span>Plesk | cPanel | Apache, Nginx, IIS | Domain registration, DNSSEC, HSTS, SSL certificates</span></span></p>          
+                        <li><p class="tags">ITSM<br><span><span>Jira | ManageEngine </span></span></p>                             
+                    </ul>
+                </div>
+                <div class="card">
+                    <p><i class="fas fa-graduation-cap stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Education</p>
+                    <ul>
+                        <li><p class="tags">CFGS Administración de Sistemas Informáticos en Red<br><span>I.E.S Triana | <span>2016-2017</span></span></p>
+                            <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
+                        <li><p class="tags">CFGM Instalaciones de Telecomunicaciones<br><span>I.E.S Los Viveros | <span>2015-2016</span></span></p>
+                            <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

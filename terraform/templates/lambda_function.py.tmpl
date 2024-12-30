@@ -1,0 +1,36 @@
+import json
+import boto3
+from decimal import Decimal
+
+dynamodb = boto3.resource('dynamodb')
+table = dynamodb.Table('VisitCounter-lambda')
+
+#Avoiding get+update method for dynamodb on-demand usage. 
+def lambda_handler(event, context):
+    response = table.update_item(
+        Key={
+            'visitor_id': 'alvaronl.com'  # The primary key in the table
+        },
+        UpdateExpression="SET curvisits = if_not_exists(curvisits, :start) + :increment",  # Directly use 'visitors'
+        ExpressionAttributeValues={
+            ":increment": 1,   # Increment by 1
+            ":start": 0        # Default value if key does not exist
+        },
+        ReturnValues="UPDATED_NEW"  # Return the updated attributes
+    )
+    
+    # Fetch the updated count
+    updated_count = response['Attributes']['curvisits']
+    # Convert Decimal to int for JSON. DynamoDB uses decimal.
+    updated_count_int = int(updated_count) if isinstance(updated_count, Decimal) else updated_count
+    return {
+        'statusCode': 200,
+        'headers': {
+            'Access-Control-Allow-Headers': 'Content-Type',
+            'Access-Control-Allow-Origin': '${domain_origin}',
+            'Access-Control-Allow-Methods': 'OPTIONS,POST,GET'
+        },
+        'body': json.dumps({
+            'curvisits': updated_count_int
+        })
+    }

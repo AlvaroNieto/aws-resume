@@ -1,0 +1,6 @@
+# Ignore the .terraform directory in the terraform folder
+terraform/.terraform/
+
+#Ignore created files from templates
+lambda_function.zip
+html/js/api.js
