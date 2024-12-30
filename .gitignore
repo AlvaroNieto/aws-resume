@@ -2,5 +2,6 @@
 terraform/.terraform/
 
 #Ignore created files from templates
+lambda_function.py
 lambda_function.zip
 html/js/api.js
